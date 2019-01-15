@@ -5,10 +5,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <p>Hello, World!</p>
+          <User name={"hoge"} />
       </div>
     );
   }
+}
+
+const User = (props) => {
+  return <div>{props.name}</div>
 }
 
 export default App;
